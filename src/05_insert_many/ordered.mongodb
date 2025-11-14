@@ -1,0 +1,59 @@
+use("platzi_store");
+
+db.productos.drop();
+
+db.productos.insertMany(
+  [
+    {
+      _id: 103,
+      nombre: "Laptop Gamer",
+      precio: 1500,
+      descripcion: "Laptop con tarjeta gráfica dedicada y alta performance",
+      categoria: "Electrónica",
+      stock: 10,
+      proveedor: {
+        nombre: "GameTech",
+        contacto: "contacto@gametech.com",
+      },
+    },
+    {
+      _id: 104,
+      nombre: "Cámara DSLR",
+      precio: 800,
+      descripcion: "Cámara profesional con lentes intercambiables",
+      categoria: "Electrónica",
+      stock: 8,
+      proveedor: {
+        nombre: "PhotoPro",
+        contacto: "contacto@photopro.com",
+      },
+    },
+    {
+      _id: 103,
+      nombre: "Smartwatch",
+      precio: 200,
+      descripcion: "Reloj inteligente con monitor de actividad y notificaciones",
+      categoria: "Electrónica",
+      stock: 25,
+      proveedor: {
+        nombre: "WristTech",
+        contacto: "contacto@wristtech.com",
+      },
+    },
+    {
+      _id: 106,
+      nombre: "Tablet 10 pulgadas",
+      precio: 300,
+      descripcion: "Tablet con pantalla HD y batería de larga duración",
+      categoria: "Electrónica",
+      stock: 20,
+      proveedor: {
+        nombre: "TabWorld",
+        contacto: "contacto@tabworld.com",
+      },
+    },
+  ],
+  { ordered: false }
+);
+
+db.productos.find();

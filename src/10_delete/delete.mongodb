@@ -1,0 +1,7 @@
+use("platzi_store");
+
+// db.productos.deleteOne({ _id: ObjectId("6916421d6772b51103851c39") });
+
+// db.products.deleteMany({ price: 100 });
+
+db.products.drop();

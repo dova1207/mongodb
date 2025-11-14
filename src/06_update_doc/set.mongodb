@@ -1,0 +1,8 @@
+use("platzi_store");
+
+db.productos.updateOne(
+  { _id: 103 },
+  {
+    $set: { nombre: "Smart TV 55 Change", precio: 5000 },
+  }
+);

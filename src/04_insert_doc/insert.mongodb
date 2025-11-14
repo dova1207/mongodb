@@ -1,0 +1,28 @@
+use("platzi_store");
+
+db.productos.insertOne({
+  _id: 101,
+  nombre: "Smart TV 55 pulgadas",
+  precio: 2200,
+  descripcion: "Smart TV 4K UHD con HDR y Alexa integrado",
+  categoria: "Electrónica",
+  stock: 15,
+  proveedor: {
+    nombre: "TechWorld",
+    contacto: "contacto@techworld.com",
+  },
+});
+db.productos.insertOne({
+  _id: 102,
+  nombre: "Auriculares Inalámbricos",
+  precio: 150,
+  descripcion: "Auriculares Bluetooth con cancelación de ruido",
+  categoria: "Electrónica",
+  stock: 30,
+  proveedor: {
+    nombre: "SoundPro",
+    contacto: "contacto@soundpro.com",
+  },
+});
+
+// db.productos.find();

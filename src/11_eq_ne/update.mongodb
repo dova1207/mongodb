@@ -1,0 +1,10 @@
+use("platzi_store");
+
+//using ne
+db.inventory.updateMany(
+  {
+    qty: { $ne: 20 },
+  },
+  { $inc: { qty: 10 } }
+);
+// db.inventory.updateMany({ "item.code": { $ne: "123" } }, { $set: { status: "A" } });
